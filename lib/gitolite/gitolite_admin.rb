@@ -103,7 +103,8 @@ module Gitolite
 
 
     def admin_url
-      ['ssh://', @settings[:git_user], '@', @settings[:hostname], '/gitolite-admin.git'].join
+      #['ssh://', @settings[:git_user], '@', @settings[:hostname], '/gitolite-admin.git'].join
+      ['/home/git/repositories', '/gitolite-admin.git'].join
     end
 
 
